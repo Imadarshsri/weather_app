@@ -42,7 +42,7 @@ app.get("/help", (req, res) => {
     title: "Help Page",
     name: "Adarsh Srivastava",
     helperText:
-      "Please visit api.openweather.com for weather service related issue",
+      "Please visit api.openweather.org or api.mapbox.com for weather or address service related issue respectively.",
   });
 });
 
