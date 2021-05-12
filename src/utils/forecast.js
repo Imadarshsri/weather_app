@@ -16,12 +16,18 @@ const forecast = (longitude, latitude, callback) => {
     } else {
       callback(
         undefined,
-        body.weather[0].description +
+        body.weather[0].main +
           ". It is currently " +
           body.main.temp +
-          " degrees out. There is " +
+          "° out but it feels like " +
+          body.main.feels_like +
+          "°. There is " +
           body.main.humidity +
-          "% humidity."
+          "% humidity. Max Temp. of the day is " +
+          body.main.temp_max +
+          "° and Min. Temp. of the day is  " +
+          body.main.temp_min +
+          "°."
       );
     }
   });
